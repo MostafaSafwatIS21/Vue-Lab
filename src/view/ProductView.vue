@@ -3,33 +3,21 @@ import { computed, onMounted, onUnmounted } from "vue";
 import { useRoute } from "vue-router";
 import ProductCard from "@/components/ProductCard.vue";
 import ProductDetails from "@/components/ProductDetails.vue";
-
-const emit = defineEmits(["buy"]);
-
-const { products } = defineProps({
-  products: {
-    type: Array,
-    default: () => [],
-  },
-});
+import { useProductStore } from "@/store/productStore";
 
 const route = useRoute();
+const productStore = useProductStore();
 
-const productId = computed(() => Number(route.params.id));
+const productId = computed(() => String(route.params.id));
 
-const product = computed(() =>
-  products.find((item) => item.id === productId.value),
-);
+const product = computed(() => productStore.getProductById(productId.value));
 
 const relatedProducts = computed(() =>
-  products.filter((item) => item.id !== productId.value),
+  productStore.products.filter((item) => String(item.id) !== productId.value),
 );
 
-const handleBuy = (id) => {
-  emit("buy", id);
-};
-
-onMounted(() => {
+onMounted(async () => {
+  await productStore.fetchProducts();
   console.log(`ProductView mounted for ID: ${route.params.id}`);
 });
 
@@ -40,7 +28,13 @@ onUnmounted(() => {
 
 <template>
   <div class="p-6">
-    <ProductDetails v-if="product" :product="product" @buy="handleBuy" />
+    <div v-if="productStore.loading" class="py-10 text-center">
+      <span class="loading loading-spinner loading-lg"></span>
+    </div>
+    <div v-else-if="productStore.error" class="alert alert-error">
+      {{ productStore.error }}
+    </div>
+    <ProductDetails v-else-if="product" :product="product" />
     <div v-else class="alert alert-warning">Product not found.</div>
     <div class="mt-10">
       <h3 class="text-2xl font-semibold mb-4">Related Products</h3>

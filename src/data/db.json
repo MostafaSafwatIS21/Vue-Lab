@@ -1,0 +1,284 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Orbit Wireless Headphones",
+      "description": "Comfort-focused wireless headphones with clear mids, punchy bass, and 30-hour battery life.",
+      "price": 129.99,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Black wireless headphones on a white background",
+      "tags": [
+        "audio",
+        "wireless",
+        "best-seller"
+      ],
+      "stock": 7
+    },
+    {
+      "id": "2",
+      "title": "Pulse Smartwatch",
+      "description": "Track heart rate, sleep, and daily activity with a bright display and water-resistant build.",
+      "price": 89.5,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Smartwatch close-up on a soft background",
+      "tags": [
+        "wearables",
+        "fitness",
+        "new"
+      ],
+      "stock": 5
+    },
+    {
+      "id": "3",
+      "title": "Aero Mechanical Keyboard",
+      "description": "Low-profile mechanical keyboard with hot-swappable switches and subtle RGB backlight.",
+      "price": 149,
+      "image": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Mechanical keyboard on a desk",
+      "tags": [
+        "accessories",
+        "keyboard",
+        "gaming"
+      ],
+      "stock": 0
+    },
+    {
+      "id": "4",
+      "title": "Nova 4K Webcam",
+      "description": "Ultra-clear 4K webcam with dual microphones and auto-light correction for meetings.",
+      "price": 109,
+      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Webcam mounted on top of a monitor",
+      "tags": [
+        "video",
+        "work",
+        "creator"
+      ],
+      "stock": 18
+    },
+    {
+      "id": "5",
+      "title": "Luna LED Desk Lamp",
+      "description": "Adjustable LED desk lamp with touch controls and three color temperature modes.",
+      "price": 49.99,
+      "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Modern LED desk lamp on a wooden desk",
+      "tags": [
+        "home",
+        "office",
+        "lighting"
+      ],
+      "stock": 25
+    },
+    {
+      "id": "6",
+      "title": "Zen Bluetooth Speaker",
+      "description": "Portable Bluetooth speaker with 12-hour playtime and IPX7 waterproof rating.",
+      "price": 79.99,
+      "image": "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Blue Bluetooth speaker on a beach towel",
+      "tags": [
+        "audio",
+        "portable",
+        "outdoor"
+      ],
+      "stock": 15
+    },
+    {
+      "id": "7",
+      "title": "Cosmo Coffee Maker",
+      "description": "Programmable coffee maker with thermal carafe and brew-strength control.",
+      "price": 89.99,
+      "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Black coffee maker on a kitchen counter",
+      "tags": [
+        "kitchen",
+        "appliances",
+        "morning"
+      ],
+      "stock": 8
+    },
+    {
+      "id": "8",
+      "title": "Vita Air Fryer",
+      "description": "5.8-quart air fryer with digital touchscreen and eight cooking presets.",
+      "price": 99.99,
+      "image": "https://images.unsplash.com/photo-1606785108906-26c8e73f01e1?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Air fryer on a kitchen counter",
+      "tags": [
+        "kitchen",
+        "healthy",
+        "appliances"
+      ],
+      "stock": 10
+    },
+    {
+      "id": "9",
+      "title": "Titan Fitness Tracker",
+      "description": "Slim fitness tracker with heart rate monitor, sleep analysis, and 7-day battery life.",
+      "price": 59.99,
+      "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Fitness tracker on a wrist",
+      "tags": [
+        "wearables",
+        "fitness",
+        "budget"
+      ],
+      "stock": 20
+    },
+    {
+      "id": "10",
+      "title": "Echo Wireless Earbuds",
+      "description": "True wireless earbuds with active noise cancellation and 24-hour total playtime.",
+      "price": 119.99,
+      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "White wireless earbuds in a charging case",
+      "tags": [
+        "audio",
+        "wireless",
+        "premium"
+      ],
+      "stock": 14
+    },
+    {
+      "id": "11",
+      "title": "Flare Gaming Mouse",
+      "description": "RGB gaming mouse with 16,000 DPI, 11 programmable buttons, and ergonomic design.",
+      "price": 69.99,
+      "image": "https://images.unsplash.com/photo-1602080858373-f74529955b1c?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Gaming mouse with RGB lighting",
+      "tags": [
+        "gaming",
+        "accessories",
+        "pc"
+      ],
+      "stock": 7
+    },
+    {
+      "id": "12",
+      "title": "Mira Wireless Charger",
+      "description": "10W fast wireless charger with temperature control and anti-slip design.",
+      "price": 29.99,
+      "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Wireless charger with a phone on top",
+      "tags": [
+        "accessories",
+        "charging",
+        "mobile"
+      ],
+      "stock": 30
+    },
+    {
+      "id": "13",
+      "title": "Nebula Projector",
+      "description": "Portable 1080p projector with 200 ANSI lumens and built-in speaker.",
+      "price": 249.99,
+      "image": "https://images.unsplash.com/photo-1611348586804-61bf6c080437?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Projector displaying a movie on a wall",
+      "tags": [
+        "entertainment",
+        "video",
+        "portable"
+      ],
+      "stock": 4
+    },
+    {
+      "id": "14",
+      "title": "Polaris Backpack",
+      "description": "Water-resistant backpack with USB charging port and 30L capacity.",
+      "price": 54.99,
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Black backpack on a wooden floor",
+      "tags": [
+        "travel",
+        "accessories",
+        "outdoor"
+      ],
+      "stock": 12
+    },
+    {
+      "id": "15",
+      "title": "Solar Power Bank",
+      "description": "20,000mAh power bank with solar charging and dual USB outputs.",
+      "price": 45.99,
+      "image": "https://images.unsplash.com/photo-1598520284333-704635b3223e?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Power bank with solar panels",
+      "tags": [
+        "accessories",
+        "charging",
+        "outdoor"
+      ],
+      "stock": 9
+    },
+    {
+      "id": "16",
+      "title": "Aurora LED Strip",
+      "description": "16.4ft RGB LED strip with app control and music sync mode.",
+      "price": 39.99,
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "LED strip lighting up a room",
+      "tags": [
+        "home",
+        "lighting",
+        "smart"
+      ],
+      "stock": 18
+    },
+    {
+      "id": "17",
+      "title": "Quantum SSD",
+      "description": "1TB external SSD with USB-C, 550MB/s read speed, and shock-resistant build.",
+      "price": 129.99,
+      "image": "https://images.unsplash.com/photo-1598726668148-99946ef1cb85?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "External SSD on a desk",
+      "tags": [
+        "storage",
+        "tech",
+        "fast"
+      ],
+      "stock": 6
+    },
+    {
+      "id": "18",
+      "title": "Stellar Drone",
+      "description": "4K drone with 30-minute flight time, GPS, and obstacle avoidance.",
+      "price": 399.99,
+      "image": "https://images.unsplash.com/photo-1581078428762-63a3f0f3f315?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Drone flying over a landscape",
+      "tags": [
+        "tech",
+        "photography",
+        "outdoor"
+      ],
+      "stock": 3
+    },
+    {
+      "id": "19",
+      "title": "Luxe Leather Wallet",
+      "description": "Genuine leather wallet with RFID blocking and multiple card slots.",
+      "price": 34.99,
+      "image": "https://images.unsplash.com/photo-1591561954555-607968c989ab?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Brown leather wallet on a table",
+      "tags": [
+        "accessories",
+        "fashion",
+        "gift"
+      ],
+      "stock": 22
+    },
+    {
+      "id": "20",
+      "title": "Breeze Portable Fan",
+      "description": "USB rechargeable portable fan with three speed settings and foldable design.",
+      "price": 22.99,
+      "image": "https://images.unsplash.com/photo-1605348533952-09d4b6111ed8?auto=format&fit=crop&w=900&q=80",
+      "imageAlt": "Portable fan on a desk",
+      "tags": [
+        "home",
+        "summer",
+        "portable"
+      ],
+      "stock": 28
+    }
+  ]
+}

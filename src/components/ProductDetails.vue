@@ -1,7 +1,6 @@
 <script setup>
 import { computed, onMounted, onUnmounted } from "vue";
-
-const emit = defineEmits(["buy"]);
+import { useCartStore } from "@/store/cartStore";
 
 const { product } = defineProps({
   product: {
@@ -10,14 +9,20 @@ const { product } = defineProps({
   },
 });
 
+const cartStore = useCartStore();
+
+const title = computed(() => product.title ?? product.name ?? "Product");
+const imageAlt = computed(() => product.imageAlt ?? title.value);
+const hasDiscount = computed(() => Number(product.discount) > 0);
 const discountedPrice = computed(() => {
+  if (!hasDiscount.value) return product.price;
   return product.price - (product.price * product.discount) / 100;
 });
 
 const isOutOfStock = computed(() => product.stock === 0);
 
 const handleBuy = () => {
-  emit("buy", product.id);
+  cartStore.addToCart(product);
 };
 
 onMounted(() => {
@@ -32,19 +37,21 @@ onUnmounted(() => {
 <template>
   <div class="card lg:card-side bg-base-100 shadow-sm">
     <figure class="lg:w-1/2">
-      <img :src="product.image" :alt="product.name" class="object-cover" />
+      <img :src="product.image" :alt="imageAlt" class="object-cover" />
     </figure>
     <div class="card-body">
-      <h2 class="card-title text-3xl">{{ product.name }}</h2>
+      <h2 class="card-title text-3xl">{{ title }}</h2>
       <p class="text-sm opacity-70">{{ product.description }}</p>
       <div class="flex items-center gap-3">
         <span class="text-2xl font-semibold">${{ discountedPrice }}</span>
-        <span class="line-through text-gray-500">${{ product.price }}</span>
+        <span v-if="hasDiscount" class="line-through text-gray-500">
+          ${{ product.price }}
+        </span>
       </div>
       <div class="flex items-center gap-2">
         <span class="badge badge-outline">Stock: {{ product.stock }}</span>
         <span
-          v-for="tag in product.tags"
+          v-for="tag in product.tags || []"
           :key="tag"
           class="badge badge-secondary"
         >

@@ -1,5 +1,8 @@
 <script setup>
 import { onMounted, onUnmounted } from "vue";
+import { useCartStore } from "@/store/cartStore";
+
+const cartStore = useCartStore();
 
 onMounted(() => {
   console.log("Navbar mounted");
@@ -35,7 +38,7 @@ onUnmounted(() => {
           class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
         >
           <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/product/2">Product</router-link></li>
+          <li><router-link to="/cart">Cart</router-link></li>
           <li><router-link to="/about">About</router-link></li>
         </ul>
       </div>
@@ -44,6 +47,27 @@ onUnmounted(() => {
       <router-link to="/" class="btn btn-ghost text-xl">Store</router-link>
     </div>
     <div class="navbar-end">
+      <router-link to="/cart" class="btn btn-ghost btn-circle">
+        <div class="indicator">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 6H19M7 13L5.4 5M10 21a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z"
+            />
+          </svg>
+          <span class="badge badge-sm badge-primary indicator-item">{{
+            cartStore.totalItems
+          }}</span>
+        </div>
+      </router-link>
       <button class="btn btn-ghost btn-circle">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -59,25 +83,6 @@ onUnmounted(() => {
             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
           />
         </svg>
-      </button>
-      <button class="btn btn-ghost btn-circle">
-        <div class="indicator">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-            />
-          </svg>
-          <span class="badge badge-xs badge-primary indicator-item"></span>
-        </div>
       </button>
     </div>
   </div>
